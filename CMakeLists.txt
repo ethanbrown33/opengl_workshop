@@ -7,7 +7,7 @@ find_package(OpenGL REQUIRED)
 include_directories(includes)
 
 add_executable(opengl_workshop
-    src/00_getting_started/02_textures/02_textures.cpp
+    src/00_getting_started/01_hello_triangle/01_hello_triangle.cpp
     src/glad.c
     src/stb_image.cpp
 )

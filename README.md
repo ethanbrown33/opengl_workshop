@@ -1,6 +1,6 @@
 # OpenGL Workshop
 
-Join my on my journey as I learn OpenGL. All exercieses from [learnopengl.com](learnopengl.com)
+Join me on my journey as I learn OpenGL. All exercieses from [learnopengl.com](learnopengl.com)
 
 ## Exercise Organization
 * 00 - Getting Started
@@ -14,7 +14,7 @@ Join my on my journey as I learn OpenGL. All exercieses from [learnopengl.com](l
 ## 00 - Getting Started
 
 ### 01 - Hello Triangle
-Basic OpenGL code to open a window and display a triangle.
+Basic OpenGL code to open a window and display a triangle. Shader adds colors.
 
 ### 02 - Textures
 Import two images and display them overlapping.
