@@ -1,8 +1,8 @@
-#include "../include/glad.h"
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "./stb_image.h"
+#include <stb_image.h>
 
-#include "./shader.h"
+#include <shader.h>
 
 #include <iostream>
 
@@ -55,7 +55,7 @@ int main()
 	/*
 		Build and compile shaders and shader program
 	*/
-	Shader ourShader("/root/opengl_workshop/src/shader/shader.vert", "/root/opengl_workshop/src/shader/shader.frag");
+	Shader ourShader("/root/opengl_workshop/src/00_getting_started/02_textures/02_vertex.glsl", "/root/opengl_workshop/src/00_getting_started/02_textures/02_fragment.glsl");
 
 	/*
 		Vertices for rectangle to be drawn
@@ -131,7 +131,7 @@ int main()
 
 	// Extract image data
 	int width, height, nrChannels;
-	unsigned char *data = stbi_load("/root/opengl_workshop/src/texture/container.jpg", &width, &height, &nrChannels, 0);
+	unsigned char *data = stbi_load("/root/opengl_workshop/resources/textures/container.jpg", &width, &height, &nrChannels, 0);
 
 	// Generate texture with image data
 	if (data)
@@ -161,7 +161,7 @@ int main()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	// Extract image data
-	data = stbi_load("/root/opengl_workshop/src/texture/awesomeface.png", &width, &height, &nrChannels, 0);
+	data = stbi_load("/root/opengl_workshop/resources/textures/awesomeface.png", &width, &height, &nrChannels, 0);
 
 	// Generate texture with image data
 	if (data)
