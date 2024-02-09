@@ -18,3 +18,6 @@ Basic OpenGL code to open a window and display a triangle. Shader adds colors.
 
 ### 02 - Textures
 Import two images and display them overlapping.
+
+### 03 - Transformations
+Rotate and Translate the image with GLM
